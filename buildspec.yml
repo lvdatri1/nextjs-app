@@ -1,0 +1,15 @@
+  
+version: 0.2
+phases:
+  build:
+    commands:
+      - npm ci
+      - npm run build
+      - npm prune --production
+  post_build:
+    commands:
+      - echo Build completed on $(date +%d-%m-%Y_%H-%M-%S)
+artifacts:
+  files:
+    - '**/*'
+  
