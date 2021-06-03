@@ -2,10 +2,10 @@ FROM node:14
 # Create app directory
 WORKDIR /usr/src/app
 COPY . /usr/src/app/.
-CMD [ "yarn" ]
+CMD [ "npm", "install" ]
 
-CMD [ "yarn", "build" ]
+CMD [ "npm", "run build" ]
 
-CMD [ "yarn", "start" ]
+CMD [ "npm", "start" ]
 
 EXPOSE 3000
