@@ -5,7 +5,6 @@ phases:
     commands:
       - yarn 
       - yarn build
-      - yarn prune --production
   post_build:
     commands:
       - echo Build completed on $(date +%d-%m-%Y_%H-%M-%S)
