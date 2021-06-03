@@ -1,8 +1,10 @@
 FROM node:14-alpine
 # Create app directory
-WORKDIR /usr/src/app
-
-EXPOSE 3000
-CMD [ "yarn", "dev" ]
-
+WORKDIR /usr/src/app/
 COPY . /usr/src/app/.
+EXPOSE 80
+CMD yarn start -p 80
+
+
+
+
