@@ -3,9 +3,9 @@ version: 0.2
 phases:
   build:
     commands:
-      - npm install
-      - npm run build
-      - npm prune --production
+      - yarn 
+      - yarn build
+      - yarn prune --production
   post_build:
     commands:
       - echo Build completed on $(date +%d-%m-%Y_%H-%M-%S)
