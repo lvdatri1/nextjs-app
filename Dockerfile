@@ -3,6 +3,6 @@ FROM node:14-alpine
 WORKDIR /usr/src/app
 
 EXPOSE 3000
-CMD [ "npm", "start" ]
+CMD [ "yarn", "dev" ]
 
 COPY . /usr/src/app/.
