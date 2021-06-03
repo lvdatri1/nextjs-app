@@ -3,6 +3,6 @@ FROM node:14
 WORKDIR /usr/src/app
 COPY . /usr/src/app/.
 
-CMD [ "yarn", "dev" ]
+CMD [ "yarn", "start" ]
 
 EXPOSE 3000
