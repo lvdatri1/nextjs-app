@@ -2,7 +2,7 @@ FROM node:14-alpine
 # Create app directory
 WORKDIR /usr/src/app
 COPY . /usr/src/app/.
-EXPOSE 3000
+EXPOSE 80
 CMD [ "node", "test.js" ]
 
 
