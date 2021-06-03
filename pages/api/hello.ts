@@ -6,5 +6,6 @@ type Data = {
 }
 
 export default (req: NextApiRequest, res: NextApiResponse<Data>) => {
+  console.log("i am in back");
   res.status(200).json({ name: 'John Doe' })
 }
