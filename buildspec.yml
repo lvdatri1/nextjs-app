@@ -3,8 +3,11 @@ version: 0.2
 phases:
   build:
     commands:
+      - $ImageName = nextjs:$CODEBUILD_BUILD_NUMBER
+      - node -v
       - yarn
       - yarn build
+      - docker build -t $ImageName .
   post_build:
     commands:
       - echo Build completed on $(date +%d-%m-%Y_%H-%M-%S)
