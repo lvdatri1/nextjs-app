@@ -3,8 +3,8 @@ version: 0.2
 phases:
   build:
     commands:
-      - npm install
-      - npm run build
+      - yarn
+      - yarn build
   post_build:
     commands:
       - echo Build completed on $(date +%d-%m-%Y_%H-%M-%S)
