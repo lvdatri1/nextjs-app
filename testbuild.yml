@@ -12,3 +12,8 @@ artifacts:
   files:
     - 'lint-report.html'
   name: test/$CODEBUILD_BUILD_NUMBER/my-report
+reports:
+  js-reports:
+    files:
+      - "./*.xml"
+    file-format: "JUNITXML"

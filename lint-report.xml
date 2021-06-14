@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/t.le2/git/next-app/next-env.d.ts">
+<testcase time="0" name="/home/t.le2/git/next-app/next-env.d.ts" classname="/home/t.le2/git/next-app/next-env.d" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="1" name="/home/t.le2/git/next-app/pages/_app.tsx">
+<testcase time="0" name="org.eslint.@typescript-eslint/explicit-module-boundary-types" classname="/home/t.le2/git/next-app/pages/_app"><failure message="Missing return type on function."><![CDATA[line 4, col 1, Warning - Missing return type on function. (@typescript-eslint/explicit-module-boundary-types)]]></failure></testcase>
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="1" name="/home/t.le2/git/next-app/pages/api/hello.ts">
+<testcase time="0" name="org.eslint.@typescript-eslint/explicit-module-boundary-types" classname="/home/t.le2/git/next-app/pages/api/hello"><failure message="Missing return type on function."><![CDATA[line 8, col 16, Warning - Missing return type on function. (@typescript-eslint/explicit-module-boundary-types)]]></failure></testcase>
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="1" name="/home/t.le2/git/next-app/pages/index.tsx">
+<testcase time="0" name="org.eslint.@typescript-eslint/explicit-module-boundary-types" classname="/home/t.le2/git/next-app/pages/index"><failure message="Missing return type on function."><![CDATA[line 5, col 16, Warning - Missing return type on function. (@typescript-eslint/explicit-module-boundary-types)]]></failure></testcase>
+</testsuite>
+</testsuites>

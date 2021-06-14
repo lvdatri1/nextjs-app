@@ -6,7 +6,8 @@
     "dev": "next dev -p 80",
     "build": "next build",
     "start": "next start -p 80",
-    "test": "eslint . --ext .tsx,.ts -o lint-report.html -f html"
+    "test": "eslint . --ext .tsx,.ts -o lint-report.html -f html",
+    "report": "eslint . --ext .tsx,.ts -o lint-report.xml -f junit"
   },
   "dependencies": {
     "next": "10.2.3",
