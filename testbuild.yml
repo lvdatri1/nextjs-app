@@ -5,7 +5,7 @@ phases:
       nodejs: 14
     commands:
       - yarn
-  test:
+  build:
     commands: 
       - yarn test
 artifacts:
