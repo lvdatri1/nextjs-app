@@ -1,0 +1,13 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+  test:
+    commands:
+      - yarn 
+      - yarn test
+artifacts:
+  files:
+    - 'lint-report.html'
+  name: test/$CODEBUILD_BUILD_NUMBER/my-report
