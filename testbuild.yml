@@ -3,9 +3,10 @@ phases:
   install:
     runtime-versions:
       nodejs: 14
-  test:
     commands:
-      - yarn 
+      - yarn
+  test:
+    commands: 
       - yarn test
 artifacts:
   files:
