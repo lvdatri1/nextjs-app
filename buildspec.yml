@@ -3,9 +3,9 @@ version: 0.2
 phases:
   build:
     commands:
-      - dockerImageName=$ECR_REPO:$CODEBUILD_BUILD_NUMBER
+      - dockerImageName=$ECR_REPO/nextjs:$CODEBUILD_BUILD_NUMBER
       - docker build -t $dockerImageName .
-      - aws ecr get-login-password --region ap-southeast-2 | docker login --username AWS --password-stdin 910878629460.dkr.ecr.ap-southeast-2.amazonaws.com
+      - aws ecr get-login-password --region ap-southeast-2 | docker login --username AWS --password-stdin ECR_REPO
       - docker push $dockerImageName
       - sed -e "s|\${imageName}|$dockerImageName|" Dockerrun.aws.json.template > Dockerrun.aws.json
       - cat Dockerrun.aws.json
