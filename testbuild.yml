@@ -7,13 +7,14 @@ phases:
       - yarn
   build:
     commands: 
+      - yarn report
       - yarn test
 artifacts:
   files:
-    - 'lint-report.html'
+    - 'lint-report.xml'
   name: test/$CODEBUILD_BUILD_NUMBER/my-report
 reports:
   js-reports:
     files:
-      - "./*.xml"
+      - "lint-report.xml"
     file-format: "JUNITXML"
